@@ -1,3 +1,4 @@
 # welcome
-## indexof BMC DOM/
-[ Class 1 (website status codes) ](/class1.md)
+
+
+### class practices:- https://kmfoysal06.github.io/bmc-js-dom/index.html
