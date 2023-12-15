@@ -63,4 +63,15 @@ This is used for caching purpos.It tells the client that the response has not be
 ### 308 Permanent Redirect
 (...)
 
-## 3.
+## 4. Client Error
+
+### 400 Bad Request
+the server can not or will not process the request due to some client error
+### 401 Unauthorized
+this response code means the client is unauthenticated.the client must authenticate itself to get the requested response.
+### 402 Payment Required
+This code is reserved for future use.the initial aim of this code is for digital payment systems.
+### 403 Forbidden
+The client does not have access rights to the content;that is, it is unauthorized.
+### 404 Not Found
+The server can not find the requested resource.in the browser it mean that url is invalid but in api it can also mean that the endpoint is valid but the resource itself does not exist.
