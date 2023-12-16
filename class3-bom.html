@@ -9,6 +9,7 @@
 			margin: 0;
 			padding: 0;
 			box-sizing: border-box;
+			font-family: cursive;
 		}
 		body{
 			width: 80vw;
@@ -27,7 +28,7 @@
 			border-radius: 10px;
 		}
 		.note{
-			color: #000;
+			color: #000!important;
 			background: #f00;
 			padding: 4px 10px;
 			margin: 10px 0;
@@ -36,6 +37,11 @@
 		}
 		ul li{
 			list-style: inside lower-roman;
+		}
+		@media screen and (max-width: 720px) {
+			*{
+				color: red;
+			}
 		}
 	</style>
 </head>
