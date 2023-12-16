@@ -9,6 +9,53 @@
 	<div class="container">
 		<h2>BOM - Browser object model</h2>
 		<p>The Browser Object Model allows js to talk to the browser</p>
+		<h2>The Window Object</h2>
+		<p>The Window Object supported by all browser, It represents the browser's window.</p>
+		<p>All Global objects,functions and variables are property and element of Window Object,event the "DOM" is also a property of Window object.</p>
+		<h2>Window Methods:-</h2>
+		<p>Their are uncountable number of window methods that let us to talk with browser.some usefull Window methods are listed with short description bellow.</p>
+		<ul>
+			<li>window.open() - open a new window/browser tab.</li>
+			<li>window.close() - close the window/browser tab.</li>
+			<li>window.moveTo() - move the current window.</li>
+			<li>window.resizeTo() - resize the current window.</li>
+		</ul>
+		<h2>Window Screen</h2>
+		<p>window.screen object contains info about the users's screen.it also can be written without "window" prefix.</p>
+		<ul>
+			<li>screen.width - get the width of current window</li>
+			<li>screen.height - get the height of current window</li>
+			<li>screen.availWidth - get the width of cureent window screen without interface like windows taskbar etc.</li>
+			<li>screen.availHeight - get the height of cureent window screen without interface like windows taskbar etc.</li>
+		</ul>
+		<h2>Window Location</h2>
+		<p>window.location object can be used to get the current page location info and redirect users to any other page.same like window.screen , window.location also can be written without "window" prefix.</p>
+		<ul>
+			<li>window.location.href - get the url of current window.</li>
+			<li>window.location.hostname - get the domain name of current window.</li>
+			<li>window.location.pathname - get the path and filename of current window.</li>
+			<li>window.location.protocol - get the web protocol used (http: or https:).</li>
+			<li>window.location.assign() - loads a new document.</li>
+			<li>window.location.port - get internet host port of current page.</li>
+		</ul>
+		<h2>Window History</h2>
+		<p>window.history object contains the browser history and it is also can be written without "window" prefix. <b>To protect the privacy of the users, there are limitations to how JavaScript can access this object.</b></p>
+		<ul>
+			<li>window.history.back() - same like clicking back in the browser.</li>
+			<li>window.history.forward() - same like clicking forward in the browser.</li>
+		</ul>
+		<h2>Window Navigator</h2>
+		<p>window.navigator contains info about the visitor's browser.it is also can be written without "window" prefix.</p>
+		<ul>
+			<li>window.navigator.cookieEnabled - return is cookies is enabled or not with boolean value.</li>
+			<li>window.navigator.appCodeName - return application code name (it is now removed in leatest web standart.)</li>
+			<li>window.navigator.appVersion - return the browser verson information.</li>
+			<li>window.navigator.userAgent - return the user agent header sent by the browser to the server.</li>
+			<li>window.navigator.platform - return the operating system.</li>
+			<li>window.navigator.language - return the browser language.</li>
+			<li>window.navigator.onLine - return is the browser online or not.</li>
+			<li>window.navigator.javaEnabled() - return is the java is enabled or not.</li>
+		</ul>
 	</div>
 </body>
 </html>
