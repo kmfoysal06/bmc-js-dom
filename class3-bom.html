@@ -4,10 +4,44 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>JS BOM - Browser Object Model</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body{
+			width: 80vw;
+			margin: 0 auto;
+			background: #fff;
+		}
+		.text-center{
+			text-align: center;
+		}
+		.gen-pm, h2,h1{
+			padding: 10px;
+			margin: 10px;
+		}
+		h1{
+			background: #00f;
+			border-radius: 10px;
+		}
+		.note{
+			color: #000;
+			background: #f00;
+			padding: 4px 10px;
+			margin: 10px 0;
+			border-radius: 10px;
+			text-align:center;
+		}
+		ul li{
+			list-style: inside lower-roman;
+		}
+	</style>
 </head>
 <body>
 	<div class="container">
-		<h2>BOM - Browser object model</h2>
+		<h1 class="text-center">BOM - Browser object model</h1>
 		<p>The Browser Object Model allows js to talk to the browser</p>
 		<h2>The Window Object</h2>
 		<p>The Window Object supported by all browser, It represents the browser's window.</p>
@@ -21,7 +55,7 @@
 			<li>window.resizeTo() - resize the current window.</li>
 		</ul>
 		<h2>Window Screen</h2>
-		<p>window.screen object contains info about the users's screen.it also can be written without "window" prefix.</p>
+		<p class="note">window.screen object contains info about the users's screen.it also can be written without "window" prefix.</p>
 		<ul>
 			<li>screen.width - get the width of current window</li>
 			<li>screen.height - get the height of current window</li>
@@ -29,7 +63,7 @@
 			<li>screen.availHeight - get the height of cureent window screen without interface like windows taskbar etc.</li>
 		</ul>
 		<h2>Window Location</h2>
-		<p>window.location object can be used to get the current page location info and redirect users to any other page.same like window.screen , window.location also can be written without "window" prefix.</p>
+		<p class="note">window.location object can be used to get the current page location info and redirect users to any other page.same like window.screen , window.location also can be written without "window" prefix.</p>
 		<ul>
 			<li>window.location.href - get the url of current window.</li>
 			<li>window.location.hostname - get the domain name of current window.</li>
@@ -45,7 +79,7 @@
 			<li>window.history.forward() - same like clicking forward in the browser.</li>
 		</ul>
 		<h2>Window Navigator</h2>
-		<p>window.navigator contains info about the visitor's browser.it is also can be written without "window" prefix.</p>
+		<p class="note">window.navigator contains info about the visitor's browser.it is also can be written without "window" prefix.</p>
 		<ul>
 			<li>window.navigator.cookieEnabled - return is cookies is enabled or not with boolean value.</li>
 			<li>window.navigator.appCodeName - return application code name (it is now removed in leatest web standart.)</li>
@@ -56,6 +90,23 @@
 			<li>window.navigator.onLine - return is the browser online or not.</li>
 			<li>window.navigator.javaEnabled() - return is the java is enabled or not.</li>
 		</ul>
+		<h2>Window Popup Boxes</h2>
+		<p>js has three type of popub box,</p>
+		<ul>
+			<li>window.alert() - it show a alert with the text given as its paramiter.</li>
+			<li>window.confirm() - it show a confirm box with the text given as its paramiter.and return true or false as user click ok or cancel.</li>
+			<li>window.prompt() - it can take text as input and store the text as variable.it takse two paramiter.first one is the text which will show as a label of prompt box and another one is default text on input box.</li>	
+		</ul>
+		<h2>Window Timing</h2>
+		<p>there are basically two types of window timing methods in js.they are window.setTimeout() and window.setInterval().the both takes two paramiter.first one is a function to be executed and another one is the time in mili seconds.window.setTimeout() is used to execute a function with delay of given time and window.setInterval() is used to execute after given time.but on the case of setInterval() method it will repeat executing the function.you can stop the function given as first paramiter on setInterval() or setTimeout with stopInterval() and stopTimeout(). you just have to store the setTimeout() function in a variable and give the variable name as a paramiter of setInterval() and setTimeout().</p>
+		<p>all methods releated to js tuming:- </p>
+		<ul>
+			<li>window.setTimeout(function(){},milliseconds)</li>
+			<li>window.setInterval(function(){},milliseconds)</li>
+			<li>window.stopTimeout(settimeout variable)</li>
+			<li>window.stopInterval(setinterval variable)</li>
+		</ul>
+		<p class="note">Note:- All Window Timing Function Can Be Written Without "window" prefix</p>
 	</div>
 </body>
 </html>
