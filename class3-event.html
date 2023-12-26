@@ -25,13 +25,16 @@
 			background: #f0f;
 			padding: 10px;
 		}
-		.btn-group button{
+		.btn-group button, #alertBtn{
 			border: none;
 			border-right: 1px solid #0f0;
 			padding: 10px;
 			background: #f00;
 			cursor: pointer;
 			transition: 0.5s;
+		}
+		.btn-group button:hover{
+			background: #00f;
 		}
 	</style>
 </head>
@@ -44,6 +47,7 @@
 				<button id="bg-green" onclick="bgGreen()">Make BG Green</button>
 				<button id="text-big" onclick="bigText()">Make Text Big</button>
 			</div>
+			<button id="alertBtn">Click ME for a alert</button>
 		</div>
 	</div>
 	<script src="class4-event.js"></script>

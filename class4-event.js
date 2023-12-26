@@ -7,12 +7,12 @@ function bgGreen(){
 function bigText(){
 	document.getElementById("heading").style.fontSize = "40px";
 }
-
-function btnHover(index){
-	button[index].style.background = '#f00';
+function alertAction(){
+	window.alert('you did it! 😍');
 }
 
-let button = document.getElementsByTagName("button");
-button[0].onclick = btnHover(0);
-button[1].onclick =  btnHover(1);
-button[2].onclick =  btnHover(2);
+
+
+let alertBtn = document.getElementById("alertBtn");
+
+alertBtn.onclick = alertAction ;
