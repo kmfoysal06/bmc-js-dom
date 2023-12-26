@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JS Event Listener</title>
+	<style>
+		.container{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-height: 100vh;
+		}
+		.canvas{
+			background: #00f;
+			width: 500px;
+			height: 500px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+		.btn-group{
+			display: flex;
+			background: #f0f;
+			padding: 10px;
+		}
+		.btn-group button{
+			border: none;
+			border-right: 1px solid #0f0;
+			padding: 10px;
+			background: #f00;
+			cursor: pointer;
+			transition: 0.5s;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="canvas" id="canvas">
+			<h2 id="heading">This is Canvas</h2>
+			<div class="btn-group">
+				<button id="text-white" onclick="textWhite()">Make Text white</button>
+				<button id="bg-green" onclick="bgGreen()">Make BG Green</button>
+				<button id="text-big" onclick="bigText()">Make Text Big</button>
+			</div>
+		</div>
+	</div>
+	<script src="class4-event.js"></script>
+</body>
+</html>
