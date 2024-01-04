@@ -14,18 +14,49 @@
 			width: 80%;
 			margin: auto;
 		}
+		.post p{
+			width: 90%;
+			margin:50px auto 200px auto;
+		}
+		.comments{
+			width: 40%;
+		}
+		.comments p{
+			border: 1px solid #00f;
+			padding: 10px;
+		}
+		.add-cmt{
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.add-cmt textarea{
+			resize: none;
+		}
+		.add-cmt input{
+			padding: 10px 10px;
+			border: none;
+			background: midnightblue;
+			margin: 0 10px;
+			cursor: pointer;
+
+		}
 	</style>
 </head>
 <body>
 	<div class="container">
 		<div class="post">
+			<h2 align="center">The post</h2>
 			<p>
 				Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Dolor tempore, distinctio. Dolore labore quos perferendis, ducimus. Accusamus aliquid, possimus perspiciatis, similique enim quaerat sint inventore iure, veritatis tempora reprehenderit. Quisquam quos, alias dolor iusto delectus, esse aperiam tempora possimus quae excepturi consequuntur quidem, nihil odio officia amet. Tenetur et fugit molestiae libero repudiandae officia quaerat, facere fugiat, repellendus esse! Consequuntur, repellat praesentium, doloribus non tempore dolores odit laborum veniam necessitatibus, magni sed officiis, excepturi incidunt neque maiores nemo ipsam rem placeat ex quas quod? Commodi qui deleniti animi repudiandae sunt placeat, molestias explicabo aliquam nostrum recusandae cum enim inventore, nam.
 			</p>
 		</div>
+
+		<h2>Comments</h2>
 		<div class="comments" id="comments"></div>
 		<div class="add-cmt">
-			<textarea cols="40" rows="10" id="cmt"></textarea>
+			<textarea cols="40" rows="2" id="cmt"></textarea>
 			<input type="button" value="comment" id="submit-btn">
 		</div>
 	</div>
@@ -33,14 +64,15 @@
 
 	<script>
 		let btn = document.getElementById("submit-btn");
-
 		btn.addEventListener("click",function(){
-		let comment = document.getElementById("cmt");
-		let comments = document.getElementById("comments");
-	    let commentP = document.createElement("p");
-	    commentP.innerText = comment.value;
-	    comments.appendChild(commentP);
-	    comment.value = '';
+			let comment = document.getElementById("cmt");
+			if(comment.value.trim().length !== 0){
+				let comments = document.getElementById("comments");
+			    let commentP = document.createElement("p");
+			    commentP.innerText = comment.value;
+			    comments.appendChild(commentP);
+			    comment.value = '';
+			}
 		})
 	</script>
 </body>
