@@ -4,8 +4,94 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ES 6 Basic JS DOM</title>
+	<style>
+		body{
+			background: #dddddd;
+		}
+		.codes{
+			margin: auto;
+		}
+		.codes h2{
+			margin: auto;
+			display:block;
+			width: 50%;
+			padding: 5px 20px;
+			position: relative;
+			background: #fff;
+		}
+		.codes h2::before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 10px;
+			height: 100%;
+			background: #f00;
+		}
+		.codes code{
+			display: block;
+			width: 50%;
+			word-wrap: inherit;
+			margin:auto;
+			min-height: 100vh;
+			min-height: 100svh;
+			background: gray;
+			padding: 20px;
+		}
+
+	</style>
 </head>
 <body>
+
+<div class="codes">
+	<h2>JS Codes behind This Page</h2>
+	<code>
+// let a = 100;<br />
+// let b = 200;<br />
+<br />
+// function addAB(a,b){<br />
+// &nbsp; &nbsp; &nbsp;return a + b;<br />
+// }<br />
+<br />
+// console.log(addAB(a,b));<br />
+<br />
+<br />
+// let a = 100;<br />
+// let b = 300;<br />
+// let sum = (a,b) =&gt; a + b;<br />
+<br />
+// console.log(sum(a,b));<br />
+//output 400<br />
+<br />
+// function spreads(...a){<br />
+// &nbsp; &nbsp; &nbsp;a.map((nthValue,n)=&gt;{<br />
+// &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;a[n] = nthValue * nthValue;<br />
+// &nbsp; &nbsp; &nbsp;})<br />
+// &nbsp; &nbsp; &nbsp;return a;<br />
+// }<br />
+// console.log(spreads(1,2,3,4))&nbsp;<br />
+//output [1,4,9,16]<br />
+<br />
+// const spreads = (...a) =&gt; a.map((v,i) =&gt; a[i] = v * v);<br />
+// console.log(spreads(1,6,2))<br />
+//output [1,36,4]<br />
+<br />
+// const developer = {name:&#039;foysal&#039;,languages:[&#039;wordpress&#039;]}<br />
+// developer.languages.push(&#039;php&#039;);<br />
+// developer.languages.push(&#039;js&#039;);<br />
+// console.log(developer.languages);<br />
+<br />
+// output [&#039;wordpress&#039;,&#039;php&#039;,&#039;js&#039;]<br />
+<br />
+<br />
+// const arr = [1,24,54,45,435,35,443];<br />
+// arr[3] = 54; //[1,24,54,54,435,35,443]<br />
+// arr.push(443); //[1,24,54,54,435,35,443,443]<br />
+// arr[arr.length-2] = 0; //[1,24,54,54,435,35,0,443]<br />
+// console.log(arr)<br />
+// // output [1,24,54,54,435,35,0,443]
+	</code>
+</div>
 	
 	<script src="class6-es6-intro.js"></script>
 </body>
