@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ES 6 Basic JS DOM</title>
+	<style>
+		body{
+			background: #dddddd;
+		}
+		.codes{
+			margin: auto;
+		}
+		.codes h2{
+			margin: auto;
+			display:block;
+			width: 50%;
+			padding: 5px 20px;
+			position: relative;
+			background: #fff;
+		}
+		.codes h2::before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 10px;
+			height: 100%;
+			background: #f00;
+		}
+		.codes code{
+			display: block;
+			width: 50%;
+			word-wrap: inherit;
+			margin:auto;
+			min-height: 100vh;
+			min-height: 100svh;
+			background: gray;
+			padding: 20px;
+		}
+
+	</style>
+</head>
+<body>
+
+<div class="codes">
+	<h2>JS Codes behind This Page</h2>
+	<code></code>
+</div>
+	
+	<script src="class7-es6-part2.js"></script>
+</body>
+</html>
