@@ -11,15 +11,15 @@
 		.codes{
 			margin: auto;
 		}
-		.codes h2{
-			margin: auto;
+		.codes h2, .codes h3{
+			margin:20px auto;
 			display:block;
 			width: 50%;
 			padding: 5px 20px;
 			position: relative;
 			background: #fff;
 		}
-		.codes h2::before{
+		.codes h2::before, .codes h3::before{
 			content: '';
 			position: absolute;
 			top: 0;
@@ -28,6 +28,9 @@
 			height: 100%;
 			background: #f00;
 		}
+		 .codes h3::before{
+		 	background: #0f0!important-;
+		 }
 		.codes code{
 			display: block;
 			width: 50%;
@@ -45,7 +48,58 @@
 
 <div class="codes">
 	<h2>JS Codes behind This Page</h2>
-	<code></code>
+
+	<h3>JS Template Literal</h3>
+	<code>
+		const name = &#039;foysal&#039;;<br />
+		const age &nbsp;= 12;<br />
+		const normalConcat = &#039;HI! i am &#039; +name+ &#039; and i am &#039; +age+ &#039; year old.&#039;;<br />
+		console.log(normalConcat);<br />
+		<br />
+		const templateLiteral = `Hi am ${name} and i am ${age} year old.`;<br />
+		console.log(templateLiteral)
+	</code>
+
+	<h3>Working With Three Dots</h3>
+	<code>
+		const friends = [&#039;aziz&#039;,&#039;asif&#039;,&#039;asraf&#039;];<br />
+		&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;const azizFriends = [&#039;asraf&#039;,&#039;atif&#039;];<br />
+		&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;const asifFriends = [&#039;anas&#039;,&#039;abrar&#039;];<br />
+		&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;const ashrafFriends = [&#039;abida&#039;,&#039;anisha&#039;];<br />
+		<br />
+		&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;const mutualFriends = [...azizFriends,...asifFriends,...asifFriends];<br />
+		&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;console.log(mutualFriends);<br />
+		<br />
+		&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;const foysal = {name:&#039;foysal&#039;,age:&#039;NaN&#039;,aim:&#039;web developer&#039;,dream:&#039;be great&#039;,nightmare:&#039;error&#039;}<br />
+		<br />
+		&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;const {name,age,aim} = foysal;<br />
+		&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;console.log(name)<br />
+		&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;console.log(age)<br />
+		&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;console.log(aim)
+	</code>
+
+
+	<h3>Working With Class And Inheritence</h3>
+	<code>
+		class Parent{<br />
+		&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;constructor(){<br />
+		&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;this.instructor = &#039;ad gupta sir&#039;;<br />
+		&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;}<br />
+		}<br />
+		<br />
+		class User extends Parent{<br />
+		&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;constructor(name,age){<br />
+		&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;super();<br />
+		&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;this.name = name;<br />
+		&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;this.age = age;<br />
+		&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;}<br />
+		}<br />
+		<br />
+		const foysal = new User(&#039;kazi foysal&#039;,1020);<br />
+		<br />
+		const simpleBio = `Hi , i am ${foysal.name} i am nan ${foysal.age} old and my instructor is ${foysal.instructor}`;<br />
+		console.log(simpleBio)
+	</code>
 </div>
 	
 	<script src="class7-es6-part2.js"></script>
