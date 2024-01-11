@@ -23,8 +23,20 @@
 			width: 50%;
 			padding: 5px 20px;
 			position: relative;
-			background: #fff;
 			cursor: pointer;
+		    background-size: 0%;
+		    transition: background-size 500ms, color 500ms;
+		    background-repeat: no-repeat;
+		}
+		.codes h2{
+			background-image: linear-gradient(45deg, #ca1717, #ff8601);
+		}
+		.codes h3{
+			background-image: linear-gradient(45deg, #00ff37, #90ff01);
+		}
+		.codes h2:hover, .codes h3:hover{
+			 background-size: 100%;
+			 color: #fff;
 		}
 		.codes h2::before, .codes h3::before{
 			content: '';
